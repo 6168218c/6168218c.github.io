@@ -27,6 +27,8 @@
 
 
 
+    <link rel="dns-prefetch" href="https://imsun.github.io"/>
+
 
 
 
@@ -492,6 +494,33 @@
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'http://6168218c.github.io/2020/03/27/hello-world/', // 可选。默认为 location.href
+        owner: '6168218c',
+        repo: 'comments-archive',
+        oauth: {
+            client_id: 'f3297d0332637020bd2d',
+            client_secret: 'bb508c1e23a3704053f9fe8e924e0dddaa91bc0a',
+        },
+    })
+    gitment.render('container')
+</script>
+
+
                 
             </div>
 
@@ -826,6 +855,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+   <!-- Gitment -->
 
 
 
